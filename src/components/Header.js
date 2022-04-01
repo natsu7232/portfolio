@@ -5,19 +5,19 @@ const Header = () => {
   return (
     <header>
       <div className='logo'>
-        <h3>ポートフォリオ</h3>
+        <h3 className='caveat'>portfolio</h3>
       </div>
 
       <nav>
         <ul>
           <li>
-            <Link to="/">ホーム</Link>
+            <Link className='caveat' to="/">top</Link>
           </li>
           <li>
-            <Link to="/Career">経歴</Link>
+            <Link className='caveat' to="/Career">works</Link>
           </li>
           <li>
-            <Link to="/Self">自己PR</Link>
+            <Link className='caveat' to="/Self">PR</Link>
           </li>
           
         </ul>
