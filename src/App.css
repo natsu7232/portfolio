@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kosugi+Maru&display=swap');
+
+.App{
+  width: 100%;
+  height: 100vh;
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* font */
+.caveat{
+  font-family: 'Caveat', cursive;
+  font-size: 35px;
+}
+.kosugi{
+  font-family: 'Kosugi Maru', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading{
+  font-family: 'Caveat', cursive;
+  padding: 40px 0  30px 0;
+  font-size: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* header */
+header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(252, 222, 227);
   color: white;
+  width: 100%;
+  z-index: 10;
+  height: 90px;
 }
 
-.App-link {
-  color: #61dafb;
+header .logo h3{
+  font-size: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+  font-size: 30px;
+}
+
+nav ul li a:hover{
+  color: pink;
+}
+
+/* footer */
+footer{
+  text-align: center;
+  background-color: rgb(252, 222, 227);
+  color: white;
+  width: 100%;
+  height: 50px;
+}
+footer h3{
+  margin: 50px;
+}
+
+
+/* home */
+.main-icon{
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
+.icon{
+  width: 200px;
+  border-radius: 50%;
+  margin: 30px;
+  
+}
+
+.name{
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  background-color: rgb(252, 222, 227);
+  color: rgb(175, 101, 78);
+}
+
+.border_bottom {
+  position: relative;
+  display: inline-block;
+  color: #1B1B1B;
+  text-decoration: none;
+}
+.border_bottom:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: hotpink;
+}
+.border_bottom::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.border_bottom:hover::after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.skill{
+  width: 230px;
+  height: 160px;
+  object-fit: cover;
+}
+.skillList{
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.title{
+  margin: 40px 0  30px 0;
+
+}
+
+
+
+.sec {
+  padding: 0;
+  background: #fff;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.sec .cards {
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+}
+.sec .card {
+  padding: 0 40px;
+  width: 350px;
+  height: 500px;
+  transition: box-shadow 0.3s;
+  margin: 0 50px;
+  border-radius: 40px;
+  border-color: white;
+}
+.sec .card:hover {
+  box-shadow: 0 12px 15px 0 rgba(245, 166, 166, 0.24), 0 17px 50px 0 rgba(245, 173, 173, 0.19);
+}
+
+.sec .card p {
+  color: #A2A2A2;
+  text-align: left;
+  text-indent: 1em;
+  font-size: 16px;
+  line-height: 26px;
+  transition: color 0.3s;
+}
+.sec .card ul{
+  list-style-type: none;
+}
+
+.a-no{
+  text-decoration: none;
+  border: none;
 }
