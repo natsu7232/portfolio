@@ -1,9 +1,10 @@
 import './App.css';
-import CareerPage from './components/CareerPage';
-import Header from './components/Header';
-import HomePage from './components/HomePage';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import SelfPage from './components/SelfPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import TopPage from './components/TopPage';
+import WorksPage from './components/WorksPage';
+import PRPage from './components/PRPage';
 
 function App() {
   return (
@@ -11,10 +12,11 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/Career' element={<CareerPage />} />
-          <Route path='/Self' element={<SelfPage />} />
+          <Route path='/' element={<TopPage />} />
+          <Route path='/Career' element={<WorksPage />} />
+          <Route path='/Self' element={<PRPage />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
