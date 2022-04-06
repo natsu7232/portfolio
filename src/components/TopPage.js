@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
-
 import icon from "../images/girl.png";
 import php from "../images/php_P.png";
 import laravel from "../images/laravel.png";

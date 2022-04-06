@@ -30,7 +30,6 @@ header{
   align-items: center;
   background-color: rgb(252, 222, 227);
   color: white;
-  /* position: fixed; */
   width: 100%;
   z-index: 10;
   height: 90px;
@@ -61,6 +60,19 @@ nav ul li a{
 nav ul li a:hover{
   color: pink;
 }
+
+/* footer */
+footer{
+  text-align: center;
+  background-color: rgb(252, 222, 227);
+  color: white;
+  width: 100%;
+  height: 50px;
+}
+footer h3{
+  margin: 50px;
+}
+
 
 /* home */
 .main-icon{
@@ -139,82 +151,43 @@ button{
 
 
 
-
-
-#sec {
+.sec {
   padding: 0;
   background: #fff;
   text-align: center;
   word-wrap: break-word;
 }
 
-#sec .cards {
+.sec .cards {
   margin: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   
 }
-#sec .card {
+.sec .card {
   padding: 0 40px;
   width: 350px;
-  height: 550px;
+  height: 500px;
   transition: box-shadow 0.3s;
   margin: 0 50px;
   border-radius: 40px;
   border-color: white;
 }
-#sec .card:hover {
+.sec .card:hover {
   box-shadow: 0 12px 15px 0 rgba(245, 166, 166, 0.24), 0 17px 50px 0 rgba(245, 173, 173, 0.19);
 }
-/* #sec .card:hover span {
-  color: #63B7E6;
-} */
-/* #sec .card:hover p {
-  color: #555;
-} */
-/* #sec .card:hover .title01 {
-  color: #63B7E6;
-} */
-/* #sec .card:hover .title01:after {
-  width: 25px;
-} */
-/* #sec .card span {
-  font-size: 2.6em;
-  display: block;
-  transition: color 0.3s;
-  color: #A2A2A2;
-} */
-/* #sec .card span:before, #sec .card span:after {
-  position: static;
-} */
-/* #sec .card .title01 {
-  color: #6f6f6f;
-  display: inline-block;
-  font-size: 24px;
-  font-weight: 100;
-  transition: color 0.3s;
-  text-align: center;
-} */
-/* #sec .card .title01:after {
-  content: "";
-  position: relative;
-  left: 50%;
-  top: 20px;
-  transform: translateX(-50%);
-  display: block;
-  width: 40px;
-  height: 1px;
-  background: #6f6f6f;
-  transition: width 0.3s;
-} */
-#sec .card p {
+
+.sec .card p {
   color: #A2A2A2;
   text-align: left;
   text-indent: 1em;
   font-size: 16px;
   line-height: 26px;
   transition: color 0.3s;
+}
+.sec .card ul{
+  list-style-type: none;
 }
 
 .a-no{

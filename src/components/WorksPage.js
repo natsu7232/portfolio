@@ -1,13 +1,14 @@
 import React from 'react'
 import learningSite from "../images/study.jpeg";
 import learningTime from "../images/clock.jpeg";
+import github from "../images/github.png";
 
 
 const WorksPage = () => {
   return (
    <div className='container text-center'>
       
-        <div id="sec" className='row text-center'>
+        <div className='row text-center sec'>
           <h1 className='heading'>works</h1>
          <div className='cards'>
             <a href="https://riristudy.herokuapp.com/" className='a-no'>
@@ -27,7 +28,26 @@ const WorksPage = () => {
             </a> 
           </div>
         </div>
+        <div className='row text-center sec'>
         <h1 className='heading'>github</h1>
+         <div className='cards'>
+            <a href="https://github.com/natsu7232" className='a-no'>
+              <div className='col-md-6 card'>
+              
+                <img className="icon" src={github} alt="..." />
+                <h4 className="my-3 kosugi">github</h4>
+                <ul>
+                  <li className="text-muted kosugi">ログイン機能(laravel)</li>
+                  <li className="text-muted kosugi">ログイン機能(php)</li>
+                  <li className="text-muted kosugi">ブログ(laravel)</li>
+                  <li className="text-muted kosugi">studyWatch(javascript)</li>
+                  <li className="text-muted kosugi">riristudy(php)</li>
+                  <li className="text-muted kosugi">portfolio(react)</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
 
     </div>
 
